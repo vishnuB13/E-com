@@ -9,7 +9,9 @@ const Shopify = require('shopify-api-node');
 app.use(cors())
 
 
-
+connectDB().then(()=>{
+  app.listen(process.env.PORT,()=>{console.log("port listening")})
+}).catch((err)=>{console.log(err,"error")})
 
 const shopify = new Shopify({
   shopName: process.env.SHOPIFY_STORE,
@@ -30,8 +32,3 @@ async function getOrders() {
 
 
 
-
-
-connectDB().then(()=>{
-    app.listen(7000,()=>{console.log("port listening")})
-}).catch((err)=>{console.log(err,"error")})
