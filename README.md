@@ -24,6 +24,6 @@
 
 . run the command to start the frontend application - npm start
 
-# In this project, I have used the shopify Api with nodejs to get all the orders in the shopify store and display in a custom web application. I have integrated the API and get the data from the api. 
+## In this project, I have used the shopify Api with nodejs to get all the orders in the shopify store and display in a custom web application. I have integrated the API and get the data from the api. 
 
-# To be completed : Show the data in the frontend and also implement webhooks to trigger live events happening in the shopify store to sync with the custom web application.
+## To be completed : Update the data in the database, Show the data in the frontend using useEffect and also implement webhooks to trigger live events happening in the shopify store to sync with the custom web application UI.
